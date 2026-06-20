@@ -1,11 +1,8 @@
-# Workflow Name
 name: Hello
 
-# When the workflow should run
 on:
   workflow_dispatch:
 
-# Jobs to execute
 jobs:
   say-hello:
     runs-on: ubuntu-latest
