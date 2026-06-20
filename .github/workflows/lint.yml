@@ -1,1 +1,18 @@
 #### lint.yml file #######
+name: Auto lint
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  codes:
+    run-on: ubuntu
+    steps:
+      - name: checkout or code clone
+        uses: actions/checkout@v7
+      
+      - name: install python liner
+        run: pip install ruff  
+
+
