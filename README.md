@@ -1,3 +1,3 @@
-# git hu action workfow
+# git hub action workfow
 # workflow
 create folder '.github/workflow'
