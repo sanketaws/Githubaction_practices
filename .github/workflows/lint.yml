@@ -13,6 +13,16 @@ jobs:
         uses: actions/checkout@v7
       
       - name: install python liner
-        run: pip install ruff  
+        run: pip install ruff
+      
+      - name: Run Lint
+        run: |
+          if ruff check .; then
+            echo "✅ Lint check passed"
+          else
+            echo "❌ This is an error. Please fix the code."
+            exit 1
+          fi 
+
 
 
