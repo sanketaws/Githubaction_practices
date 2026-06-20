@@ -7,7 +7,7 @@ on:
 
 jobs:
   codes:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout or code clone
         uses: actions/checkout@v7
